@@ -1,0 +1,55 @@
+.header {
+  grid-area: h;
+  background-color: rgb(0, 255, 213);
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 2fr 4fr 1fr;
+  grid-template-areas: "l p s nav log";
+  font-size: 20px;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+.header .logo {
+  background-color: darkgrey;
+  text-align: center;
+  grid-area: l;
+}
+
+.header .logo p {
+  font-weight: bold;
+  font-family: fantasy;
+  color: royalblue;
+  font-size: xxx-large;
+  margin: auto;
+}
+.header .pageName {
+  grid-area: p;
+}
+.header .search {
+  display: inline-block;
+  vertical-align: middle;
+  height: 3em;
+  grid-area: s;
+}
+
+.header .nav_menu {
+  height: 3em;
+  line-height: 2.5em;
+  grid-area: nav;
+}
+.header .nav-menu a {
+  padding: 15px 15px;
+  text-decoration: none;
+  color: darkmagenta;
+}
+.header .nav-menu a:hover {
+  border-radius: 20px 5px;
+  background-color: #0066ff;
+}
+.header .login {
+  grid-area: log;
+}
+.formSummaryError {
+  color:red;
+  border: #0066ff;
+}
